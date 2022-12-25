@@ -88,11 +88,9 @@ modeInputType.onclick = function(){
 
 hamburgerEl.onclick = function (event) {
   mobileMenuEl.style.display = "block";
-  body.style.overflow = "hidden"
 };
 mobileMenuClose.onclick = function(){
   mobileMenuEl.style.display = "none"
-  body.style.overflow = "hidden"
 }
 loginBtn.onclick = function(){
   modalLogin.style.top = "50%"
