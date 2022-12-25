@@ -79,8 +79,17 @@
 }
 
 .instagram__slide_box {
+    overflow: hidden;
     padding: 20px;
     background: var(--watsapp-hover);
+
+    ul{
+        list-style: none;
+
+        li{
+            cursor: pointer;
+        }
+    }
 }
 
 .instagram__himans {
