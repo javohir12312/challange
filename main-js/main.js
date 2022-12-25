@@ -54,9 +54,21 @@ const modalLoginClose = document.querySelector(".modal__login-close")
 const mobileMenuBtnLogin = document.querySelector(".mobile-menu__footer-login-btn")
 const mode = document.querySelector(".navbar__dark-mode")
 
-mode.onclick = function () {
-    body.classList.toggle("dark")
+let theme = false
+
+function chengeTheme(){
+  if(window.localStorage.getItem('theme') == 'dark'){
+    body.classList.add('dark')
+  } else{
+    body.classList.remove('dark')
+  }
 }
+mode.addEventListener('click', function(){
+  theme = !theme
+  window.localStorage.setItem('theme', theme ? 'dark' : 'light')
+  chengeTheme()
+})
+chengeTheme()
 
 
 hamburgerEl.onclick = function (event) {
