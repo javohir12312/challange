@@ -1,0 +1,51 @@
+:root {
+  --dark: #fff;
+  --text: #000000;
+  --btn: #299764;
+  --btn-hover: #299764cc;
+  --insta-btn-hover: radial-gradient(
+    230.93% 230.93% at 102.01% 2.03%,
+    #f9ed32 0%,
+    #ee2a7b 36%,
+    #d22a8a 44%,
+    #8b2ab2 60%,
+    #1b2af0 83%,
+    #002aff 88%
+  );
+  --twitter-hover: #55ace3;
+  --facebook-hover: #0b84ee;
+  --watsapp-hover: #48c95f;
+  --btn-text: #fff;
+  --gray-title: #555555;
+  --card-bgc: #f5f5f5;
+  --instagram-bgc: #fff;
+  --safe-bc: #e5e7ea;
+  --bgc: #fff;
+  --border-color: #e5e7ea;
+}
+
+.dark {
+  --dark: #1c1c1c;
+  --text: #fff;
+  --btn: #299764;
+  --btn-hover: #299764cc;
+  --insta-btn-hover: radial-gradient(
+    230.93% 230.93% at 102.01% 2.03%,
+    #f9ed32 0%,
+    #ee2a7b 36%,
+    #d22a8a 44%,
+    #8b2ab2 60%,
+    #1b2af0 83%,
+    #002aff 88%
+  );
+  --twitter-hover: #55ace3;
+  --facebook-hover: #0b84ee;
+  --watsapp-hover: #48c95f;
+  --btn-text: #fff;
+  --gray-title: #fff;
+  --card-bgc: #272727;
+  --instagram-bgc: #1c1c1c;
+  --safe-bc: #333;
+  --bgc: #1c1c1c;
+  --border-color: #1c1c1c;
+}
