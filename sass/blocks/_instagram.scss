@@ -70,7 +70,7 @@
                 }
                 div{
                     p{
-                        color: var(--text);
+                        color: black;
                     }
                 }
             }
@@ -106,17 +106,17 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
-            color: var(--text);
+            color: black;
         }
         a{
-            color: var(--gray-title);
+            color: black;
         }
     }
 }
 
 .instagram__start{
     h4{
-    color: var(--text);
+    color: black;
     margin-top: -10px;
     }
 }

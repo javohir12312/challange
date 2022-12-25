@@ -53,6 +53,9 @@ const modalLogin = document.querySelector(".modal__login")
 const modalLoginClose = document.querySelector(".modal__login-close")
 const mobileMenuBtnLogin = document.querySelector(".mobile-menu__footer-login-btn")
 const mode = document.querySelector(".navbar__dark-mode")
+const modeInputType = document.querySelector(".modal__login-form-btn")
+const input = document.querySelector(".modal__login-form-input-password")
+const form = document.querySelector(".modal__login-form")
 
 let theme = false
 
@@ -71,21 +74,34 @@ mode.addEventListener('click', function(){
 chengeTheme()
 
 
+form.onsubmit = function(event){
+  event.preventDefault()
+}
+mode.onclick = function(){
+  body.classList.toggle("dark")
+}
+
+modeInputType.onclick = function(){
+  input.setAttribute("type","text")
+}
+
+
 hamburgerEl.onclick = function (event) {
-    mobileMenuEl.style.display = "block";
-    body.style.overflow = "hidden"
+  mobileMenuEl.style.display = "block";
+  body.style.overflow = "hidden"
 };
-mobileMenuClose.onclick = function () {
-    mobileMenuEl.style.display = "none"
-    body.style.overflo = "auto"
+mobileMenuClose.onclick = function(){
+  mobileMenuEl.style.display = "none"
+  body.style.overflow = "hidden"
 }
-loginBtn.onclick = function () {
-    modalLogin.style.top = "50%"
+loginBtn.onclick = function(){
+  modalLogin.style.top = "50%"
 }
-modalLoginClose.onclick = function () {
-    modalLogin.style.top = "-50%"
+modalLoginClose.onclick = function(){
+  modalLogin.style.top = "-50%"
+  input.setAttribute("type","password")
 }
-mobileMenuBtnLogin.onclick = function () {
-    modalLogin.style.top = "50%"
-    mobileMenuEl.style.display = "none"
+mobileMenuBtnLogin.onclick = function(){
+  modalLogin.style.top = "50%"
+  mobileMenuEl.style.display = "none"
 }
